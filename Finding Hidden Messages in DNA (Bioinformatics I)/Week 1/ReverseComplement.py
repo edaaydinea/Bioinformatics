@@ -1,22 +1,19 @@
-dataset = input("What is the DNA string pattern? ")
+def ReverseComplement(Pattern):
+    complement = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A'}
+    reverse_complement = ''
+    
+    # Iterate through Pattern in reverse order, compute complement, and build reverse complement string
+    for nucleotide in reversed(Pattern):
+        reverse_complement += complement[nucleotide]
+    
+    return reverse_complement
 
-forwardString = list(str(dataset.upper()))
+# Read input from file
+with open('dataset_30273_2.txt', 'r') as file:
+    pattern = file.readline().strip()
 
-def complement(DNAstring):
-	for n, i in enumerate(DNAstring):
-		if i == "A":
-			DNAstring[n] = "T"
-		elif i == "T":
-			DNAstring[n] = "A"
-		elif i == "C":
-			DNAstring[n] = "G"
-		elif i == "G":
-			DNAstring[n] = "C"
+# Get the result
+result = ReverseComplement(pattern)
 
-	DNAstring.reverse()
-	answer = ''.join(DNAstring)
-	print(" ")
-	print(answer)
-	return None
-
-complement(forwardString)
+# Print the output
+print(result)
