@@ -1,11 +1,21 @@
-Pattern = input("What is the pattern? ")
-Text = input("What is the genomic sequence? ")
-
-def PatternCount(Pattern, Text):
+def PatternCount(Text, Pattern):
     count = 0
-    for i in range(len(Text)-len(Pattern)+1):
-        if Text[i:i+len(Pattern)] == Pattern:
-            count = count+1
-    return count 
+    pattern_length = len(Pattern)
+    text_length = len(Text)
+    
+    for i in range(text_length - pattern_length + 1):
+        if Text[i:i+pattern_length] == Pattern:
+            count += 1
+    
+    return count
 
-PatternCount(Pattern, Text)
+# Read input from file
+with open('dataset_30272_6.txt', 'r') as file:
+    text = file.readline().strip()
+    pattern = file.readline().strip()
+
+# Get the result
+result = PatternCount(text, pattern)
+
+# Print the output
+print(result)
