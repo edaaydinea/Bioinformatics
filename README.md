@@ -44,27 +44,27 @@
 - **Week1:Welcome!**
   - **Status:** Completed
   - **Notes:** 
-    - [Week 1 Note](https://github.com/edaaydinea/Bioinformatics/blob/main/Finding%20Hidden%20Messages%20in%20DNA%20(Bioinformatics%20I)/Week%201/lecture_note.md)
+    - [Week 1 Note](https://github.com/edaaydinea/Bioinformatics/blob/main/BioinformaticsI/Week1/lecture_note.md)
   
 - **Week2: Finding Replication Origins**
   - **Status:** Completed
   - **Notes:**
-    - [Week 2 Note](https://github.com/edaaydinea/Bioinformatics/blob/main/Finding%20Hidden%20Messages%20in%20DNA%20(Bioinformatics%20I)/Week%202/lecture_note.md)
+    - [Week 2 Note](https://github.com/edaaydinea/Bioinformatics/blob/main/BioinformaticsI/Week2/lecture_note.md)
   
 - **Week3: Hunting for Regulatory Motifs**
   - **Status:** Completed
   - **Notes:**
-    - [Week 3 Note](https://github.com/edaaydinea/Bioinformatics/blob/main/Finding%20Hidden%20Messages%20in%20DNA%20(Bioinformatics%20I)/Week%203/lecture_note.md)
+    - [Week 3 Note](https://github.com/edaaydinea/Bioinformatics/blob/main/BioinformaticsI/Week3/lecture_note.md)
   
 - **Week4: How Rolling Dice Helps Us Find Regulatory Motifs**
   - **Status:** Completed
   - **Notes:**
-    - [Week 4 Note](https://github.com/edaaydinea/Bioinformatics/blob/main/Finding%20Hidden%20Messages%20in%20DNA%20(Bioinformatics%20I)/Week%204/lecture_note.md)
+    - [Week 4 Note](https://github.com/edaaydinea/Bioinformatics/blob/main/BioinformaticsI/Week4/lecture_note.md)
 
 - **Week5: Bioinformatics Application Challenge**
   - **Status:** Not started
   - **Notes:**
-    - [Week 5 Note](https://github.com/edaaydinea/Bioinformatics/blob/main/Finding%20Hidden%20Messages%20in%20DNA%20(Bioinformatics%20I)/Week%205/lecture_note.md)
+    - [Week 5 Note](https://github.com/edaaydinea/Bioinformatics/blob/main/BioinformaticsI/Week5/lecture_note.md)
 
 ## Certificates
 
