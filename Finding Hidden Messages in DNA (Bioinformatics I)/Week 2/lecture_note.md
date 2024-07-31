@@ -1,0 +1,65 @@
+# Where in the Genome Does RNA Replication Begin? (Part 3)
+
+- **DNA Strand Directions**
+    - DNA strands have directions.
+    - Two DNA strands run in opposite directions (blue strand: clockwise, green strand: counterclockwise).
+- **DNA Polymerase**
+    - DNA polymerases are unidirectional.
+    - They can only copy DNA in the direction opposite to DNA's direction.
+- **Replication Problem**
+    - Recruiting four DNA polymerases won't work due to their unidirectional nature.
+    - Only two of the four polymerases can move in the correct direction.
+- **Half-Strands Classification**
+    - Reverse half-strand (blue): No problem replicating; moves from origin to terminus.
+    - Thick green line: No problem replicating.
+    - The other two half-strands: Cannot replicate in the same direction they go.
+- **Replication Process**
+    - Fork enlargement allows replication to start.
+    - Multiple DNA polymerases are needed due to the unidirectional constraint.
+    - Okazaki fragments are formed during this process.
+    - Post-replication: Repair gaps between Okazaki fragments.
+- **Strand Lifestyles**
+    - Reverse half-strand: Lives mostly double-stranded.
+    - Forward half-strands: Spend a large portion single-stranded, awaiting fork opening.
+- **Mutation Rates**
+    - Single-stranded DNA has a higher mutation rate than double-stranded DNA.
+    - Cytosine (C) rapidly mutates into Thymine (T).
+    - Forward half-strands: Shortage of C, normal G.
+    - Reverse half-strands: Shortage of G, normal C.
+- **Algorithmic Implication**
+    - Walking along the genome and counting #G - #C:
+        - Decreasing #G - #C indicates moving along a strand with high C and low G.
+        - Increasing #G - #C indicates moving along a strand with low C and high G.
+    - Transition from decreasing to increasing #G - #C signals passing the origin of replication.
+
+# Where in the Genome Does RNA Replication Begin? (Part 4)
+
+- **Definition of Skew(k)**
+    - Skew(k) = Number of G - Number of C in the first k nucleotides of the genome.
+- **Skew Diagram**
+    - A plot of Skew(k) against k.
+    - Used to identify the origin of replication in a genome.
+- **E. Coli Skew Diagram**
+    - The origin of replication is at the point where the skew diagram transitions from decreasing to increasing.
+- **Frequent Words Problem**
+    - Attempt to find frequent sequences (k-mers) in the replication origin.
+    - Initial attempts failed to find frequent k-mers appearing even three times.
+- **Challenges in Finding Frequent Words**
+    - The origin of replication derived from the skew diagram may not be precise.
+    - Hidden messages initiating replication might be more subtle than expected.
+- **Replication Origin in Vibrio Cholerae**
+    - Six 9-mers were initially found in the region.
+    - Additional attention revealed two more 9-mers differing by a single nucleotide.
+- **DNA Boxes**
+    - DNA can bind to perfect 9-mers as well as variations with single nucleotide differences.
+    - This necessitates solving the "Frequent Words with Mismatches" problem.
+- **Frequent Words with Mismatches Problem**
+    - Input: A string (text), integers k (length of k-mers), and d (number of mismatches).
+    - Goal: Find all most frequent k-mers with up to d mismatches in the text.
+- **Successful Identification in E. Coli**
+    - Running the frequent words with mismatches problem found elusive frequent k-mers.
+    - These k-mers were identified as real DNA boxes in E. Coli.
+- **Practical Considerations**
+    - Some bacteria have fewer DNA boxes, making the algorithm less effective.
+    - The terminus of replication is not always directly opposite the origin.
+    - Skew diagrams can be more complex than in the case of E. Coli.
